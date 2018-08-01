@@ -1,0 +1,113 @@
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav sidenav-or">
+      <span class="menuItems">
+        <div style="width: 30%;color: white;padding: 5px 0 5px 0; background-color: green;">
+          <i class="fa fa-android"></i>
+        </div>
+        <div id="greenhv" class="width70per pdtop5">
+          <span style="float:left;margin-left:10px">App</span>
+        </div>
+      </span>
+      <span class="menuItems">
+        <div style="width: 30%;color: white;padding: 5px 0 5px 0; background-color: red;">
+          <i class="fa fa-film"></i>
+        </div>
+        <div id="redhv" class="width70per pdtop5">
+          <span style="float:left;margin-left:10px">Movies</span>
+        </div>
+      </span>
+      <span class="menuItems">
+        <div style="width: 30%;color: white;padding: 5px 0 5px 0; background-color:orange;">
+          <i class="fa fa-music"></i>
+        </div>
+        <div id="orangehv" class="width70per pdtop5">
+          <span style="float:left;margin-left:10px">Music</span>
+        </div>
+      </span>
+      <span class="menuItems">
+        <div style="width: 30%;color: white;padding: 5px 0 5px 0; background-color: #039be5;">
+          <i class="fa fa-address-book"></i>
+        </div>
+        <div id="lbluehv" class="width70per pdtop5">
+          <span style="float:left;margin-left:10px">Books</span>
+        </div>
+      </span>
+      <span class="menuItems">
+        <div style="width: 30%;color: white;padding: 5px 0 5px 0; background-color: blue;">
+          <i class="fa fa-newspaper-o"></i>
+        </div>
+        <div id="bluehv" class="width70per pdtop5">
+          <span style="float:left;margin-left:10px">Newsstand</span>
+        </div>
+      </span>
+      <span class="menuItems">
+        <div style="width: 30%;color: white;padding: 5px 0 5px 0; background-color: #658092;">
+          <i class="fa fa-laptop"></i>
+        </div>
+        <div id="greyhv" class="width70per pdtop5">
+          <span style="float:left;margin-left:10px">Devices</span>
+        </div>
+      </span>
+      <div class="card" style="padding: 10px">
+        <span class="menuItems">
+          <span style="float:left;margin-left:10px;font-size: 15px;font-weight: 100;">Account</span>
+        </span>
+        <span class="menuItems">
+          <span style="float:left;margin-left:10px;font-size: 15px;font-weight: 100;">My subscriptions</span>
+        </span>
+        <span class="menuItems">
+          <span style="float:left;margin-left:10px;font-size: 15px;font-weight: 100;">Redeem</span>
+        </span>
+        <span class="menuItems">
+          <span style="float:left;margin-left:10px;font-size: 15px;font-weight: 100;">Buy gift card</span>
+        </span>
+        <span class="menuItems">
+          <span style="float:left;margin-left:10px;font-size: 15px;font-weight: 100;">My wishlist</span>
+        </span>
+        <span class="menuItems">
+          <span style="float:left;margin-left:10px;font-size: 15px;font-weight: 100;">My plan activities</span>
+        </span>
+        <span class="menuItems">
+          <span style="float:left;margin-left:10px;font-size: 15px;font-weight: 100;">Parent Guide</span>
+        </span>
+      </div>
+
+    </div>
+
+    <div class="col-sm-10 text-left">
+      <ngu-carousel [inputs]="carouselTile">
+        <ngu-tile NguCarouselItem *ngFor="let items of carouselTileItems ">
+          <img style="width: 600px;" alt="Audiobooks now on Google Play" class="cover-image" data-cover-large="https://lh3.googleusercontent.com/qxvJhPrr7NPGQuUBcSD1cHnEJyZYjzzgqVZ0VTJxikLFs1Ogn4yvhC37ydQbJN3Wkw=w515-rw"
+               [src]= "items.src"  aria-hidden="true">
+        </ngu-tile>
+        <!-- <ngu-tile NguCarouselItem>
+          <img style="width: 600px;" alt="New Release Movies" class="cover-image" data-cover-large="https://lh3.googleusercontent.com/mtxShDOITU6dtqVqJDZ35fpXgKJbbLMLn6oNQpThU-riE2zufCQkllKISP1j3aRGnKM=w515-rw"
+            data-cover-small="https://lh3.googleusercontent.com/mtxShDOITU6dtqVqJDZ35fpXgKJbbLMLn6oNQpThU-riE2zufCQkllKISP1j3aRGnKM=w515-rw"
+            src="https://lh3.googleusercontent.com/mtxShDOITU6dtqVqJDZ35fpXgKJbbLMLn6oNQpThU-riE2zufCQkllKISP1j3aRGnKM=w515-rw"
+            aria-hidden="true">
+        </ngu-tile>
+        <ngu-tile NguCarouselItem>
+          <img style="width: 600px;" alt="Top Movie Bundles" class="cover-image" data-cover-large="https://lh3.googleusercontent.com/qxvJhPrr7NPGQuUBcSD1cHnEJyZYjzzgqVZ0VTJxikLFs1Ogn4yvhC37ydQbJN3Wkw=w515-rw"
+            data-cover-small="https://lh3.googleusercontent.com/qxvJhPrr7NPGQuUBcSD1cHnEJyZYjzzgqVZ0VTJxikLFs1Ogn4yvhC37ydQbJN3Wkw=w515-rw"
+            src="https://lh3.googleusercontent.com/qxvJhPrr7NPGQuUBcSD1cHnEJyZYjzzgqVZ0VTJxikLFs1Ogn4yvhC37ydQbJN3Wkw=w515-rw"
+            aria-hidden="true">
+        </ngu-tile>
+        <ngu-tile NguCarouselItem>
+          <img style="width: 600px;" alt="New Release Movies" class="cover-image" data-cover-large="https://lh3.googleusercontent.com/mtxShDOITU6dtqVqJDZ35fpXgKJbbLMLn6oNQpThU-riE2zufCQkllKISP1j3aRGnKM=w515-rw"
+            data-cover-small="https://lh3.googleusercontent.com/mtxShDOITU6dtqVqJDZ35fpXgKJbbLMLn6oNQpThU-riE2zufCQkllKISP1j3aRGnKM=w515-rw"
+            src="https://lh3.googleusercontent.com/mtxShDOITU6dtqVqJDZ35fpXgKJbbLMLn6oNQpThU-riE2zufCQkllKISP1j3aRGnKM=w515-rw"
+            aria-hidden="true">
+        </ngu-tile>
+        <ngu-tile NguCarouselItem>
+          <img style="width: 600px;" alt="Audiobooks now on Google Play" class="cover-image" src="https://lh3.googleusercontent.com/olnkpY4qf1hyCJEKUNwgIRzSrXcaM-nBWdcEQiGmN4WlRbQpY0d4-uypjZFhKEeUytc=w515-rw"
+            aria-hidden="true">
+        </ngu-tile> -->
+        <button NguCarouselPrev class='leftRs'>&lt;</button>
+        <button NguCarouselNext class='rightRs'>&gt;</button>
+      </ngu-carousel>
+
+      <new-release></new-release>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,131 @@
+h1 {
+  min-height: 200px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 200px;
+}
+.leftRs {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+  border-radius: 999px;
+  left: 0;
+}
+
+.rightRs {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, 0.3);
+  border-radius: 999px;
+  right: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 450px;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+/* @media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height: auto;
+  }
+} */
+
+.card-list {
+  padding-right: 0px !important;
+}
+
+.sidenav-or {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+}
+
+.width70per {
+  width: 70%;
+}
+
+#greenhv:hover {
+  background-color: green;
+}
+
+#redhv:hover {
+  background-color: red;
+}
+
+#orangehv:hover {
+  background-color: orange;
+}
+
+#lbluehv:hover {
+  background-color: #039be5;
+}
+
+#bluehv:hover {
+  background-color: blue;
+}
+
+#greyhv:hover {
+  background-color: #658092;
+}
+
+.menuItems {
+  width: 100%;
+  display: flex;
+  font-size: 25px;
+}
+
+.pdtop5 {
+  padding-top: 5px;
+}
+
+#entertainmentHeading {
+  width: 240px;
+  padding: 10px 0 10px 10px;
+  background-color: #444;
+  color: white;
+}
+
+.entertainmentIcon {
+  margin-right: 5px;
+}
+
+.btndefaultProp {
+  border: 1px solid lightgray;
+}
+
+.btnFltRt {
+  float: right;
+}
